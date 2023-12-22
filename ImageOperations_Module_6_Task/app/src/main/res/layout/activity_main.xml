@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#02231c"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/mahadev" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <Button
+            android:id="@+id/BTNblink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:backgroundTint="#55d9c0"
+            android:text="Blink"
+            android:textColor="#02231c" />
+
+
+        <Button
+            android:id="@+id/BTNrotate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#55d9c0"
+            android:padding="3dp"
+            android:text="Rotate"
+            android:textColor="#02231c"
+           />
+
+
+        <Button
+            android:id="@+id/BTNfadein"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#55d9c0"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="Fade In"
+            android:textColor="#02231c" />
+
+        <Button
+            android:id="@+id/BTNfadeout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#55d9c0"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="Fade Out"
+            android:textColor="#02231c" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <Button
+            android:id="@+id/BTNmove"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:backgroundTint="#4dd8ad"
+            android:text="Move"
+            android:textColor="#02231c" />
+
+
+        <Button
+            android:id="@+id/BTNslide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:backgroundTint="#4dd8ad"
+            android:text="Slide"
+            android:textColor="#02231c" />
+
+
+        <Button
+            android:id="@+id/BTNzoomin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#4dd8ad"
+            android:padding="3dp"
+            android:text="Zoom In"
+            android:textColor="#02231c" />
+
+        <Button
+            android:id="@+id/BTNzoomout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:backgroundTint="#4dd8ad"
+            android:text="Zoom Out"
+            android:textColor="#02231c" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/BTNstop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#c7f6ec"
+        android:text="Stop Animation"
+        android:textColor="#02231c"/>
+
+    <Button
+        android:id="@+id/BTNnextActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#c7f6ec"
+        android:text="Frame By Frame Animation"
+        android:textColor="#02231c"/>
+
+</LinearLayout>
